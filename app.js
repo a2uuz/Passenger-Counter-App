@@ -10,6 +10,8 @@ function increment() {
 function save() {
     let both = ` ${count} - `;
     saveEl.textContent += both;
+
+    // reset to 0 after saving
     count -= count ;
     countEl.textContent = count;
 }
