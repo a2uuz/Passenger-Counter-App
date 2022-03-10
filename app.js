@@ -4,13 +4,14 @@ let count = 0;
 
 function increment() {
     count += 1
-    countEl.innerText = count;
+    countEl.textContent = count;
 }
 
 function save() {
-    let both = ` ${count} ` + `-`;
-    saveEl.innerText += both;
-    console.log(count);
+    let both = ` ${count} - `;
+    saveEl.textContent += both;
+    count -= count ;
+    countEl.textContent = count;
 }
 
 
